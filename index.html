@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Food Site</title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo"><i class="fas-fa-untensils"></i>Pablo's Foods</a>
+
+            <nav class="navbar">
+                
+                <a class="active" href="#home">home</a>
+                <a href="#dishes">dishes</a>
+                <a href="#about">about</a>
+                <a href="#menu">menu</a>
+                <a href="#review">review</a>
+                <a href="#order">order</a>
+
+            </nav>
+
+            <div class="icons">
+                <i class="fas fa-bars" id="menu-bars"></i>
+                <i class="fas fa-search" id="search-icon"></i>
+                <a href="#" class="fas fa-heart">
+                    <span id="favorite-count" class="count-badge">0</span>
+                </a>
+                <a href="#" class="fas fa-shopping-cart"></a>
+            </div>
+        </header>
+
+<form action="" id = "search-form">
+    <input type="search" placeholder="search here..." name="" id="search-box">
+    <label for="search-box" class="fas fa-search"></label>
+    <i class="fas fa-times" id="close"></i>
+</form>
+
+<section class="home" id="home">
+    
+    <div class="swiper-container home-slider">
+
+        <div class="swiper-wrapper wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <span>our special dish</span>
+                    <h3>spicy pizza</h3>
+                    <p>Dive into our delicious pepperoni pizza, 
+                        topped with savory, 
+                        perfectly spiced pepperoni slices and melted cheese on a crispy, 
+                        golden crust.</p>
+                    <a href="#" class="btn">order now</a>
+                </div>
+                <div class="image">
+                    <img src="images/homeImages/homeImg.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <span>our special dish</span>
+                    <h3>Salty Fries</h3>
+                    <p>Crispy on the outside, soft on the inside—our salted fries are the 
+                        perfect balance of crunch and flavor.</p>
+                    <a href="#" class="btn">order now</a>
+                </div>
+                <div class="image">
+                    <img src="images/homeImages/homeImg2.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <span>our special dish</span>
+                    <h3>Double Burger</h3>
+                    <p>Enjoy our juicy double burger, with two grilled patties, melted cheese, 
+                        fresh toppings, and a soft toasted bun. 
+                        Double the flavor, double the satisfaction!</p>
+                    <a href="#" class="btn">order now</a>
+                </div>
+                <div class="image">
+                    <img src="images/homeImages/homeImg3.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+</section>
+
+<section class="dishes" id="dishes">
+    <h3 class="sub-heading">Our Dishes</h3>
+    <h1 class="heading">Popular Dishes</h1>
+
+    <div class="box-container">
+
+    <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="images/dishImages/burgerDish.jpeg" alt="">
+
+        <h3>Cheese Burger</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        
+        <span>R75</span>
+        <a  href="#" class="btn">add to cart</a>
+    </div>
+
+    <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="images/dishImages/chickenChipsComboDish.jpeg" alt="">
+
+        <h3>Chicken & Chips Combo</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        
+        <span>R75</span>
+        <a  href="#" class="btn">add to cart</a>
+    </div>
+
+    <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="images/dishImages/chickenDish.jpeg" alt="">
+
+        <h3>Fried Chicken</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        
+        <span>R75</span>
+        <a  href="#" class="btn">add to cart</a>
+    </div>
+
+    <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="images/dishImages/grilledCheeseSandwitchDish.jpeg" alt="">
+
+        <h3>Grilled Cheese Sandwitch</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        
+        <span>R75</span>
+        <a  href="#" class="btn">add to cart</a>
+    </div>
+
+    <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="images/dishImages/pizzaDish.jpeg" alt="">
+
+        <h3>Veggie Pizza</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        
+        <span>R75</span>
+        <a  href="#" class="btn">add to cart</a>
+    </div>
+
+    <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="images/dishImages/sandwitchDish.jpeg" alt="">
+
+        <h3>Ham Sandwitch</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        
+        <span>R75</span>
+        <a  href="#" class="btn">add to cart</a>
+    </div>
+
+    <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="images/dishImages/stripsDish.jpg" alt="">
+
+        <h3>Chicken Strips & Sauce</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        
+        <span>R75</span>
+        <a  href="#" class="btn">add to cart</a>
+    </div>
+
+    <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="images/dishImages/wrapDish.jpeg" alt="">
+
+        <h3>Chicken Wrap</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        
+        <span>R75</span>
+        <a  href="#" class="btn">add to cart</a>
+    </div>
+
+    <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="images/dishImages/loadedFriesDish.avif" alt="">
+
+        <h3>Bacon Bits & Fries</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        
+        <span>R75</span>
+        <a  href="#" class="btn">add to cart</a>
+    </div>
+
+    </div>
+
+    
+</section>
+
+<div class="image-modal" id="imageModal">
+    <span class="close-btn">&times;</span>
+    <img class="modal-content" id="modalImg">
+</div>
+
+<section class="about" id="about">
+    <h3 class="sub-heading">About Us</h3>
+    <h1 class="heading">Why Choose Us?</h1>
+
+    <div class="row">
+        <div class="image">
+            <img src="images/aboutImages/pastaAbout.avif" alt="">
+        </div>
+
+        <div class="content">
+            <h3>Best food in town</h3>
+            <p>Our family-owned restaurant offers a warm and inviting atmosphere where guests can enjoy delicious, 
+                locally-sourced meals made with the finest ingredients. 
+                Whether you're craving a comforting classic or an adventurous new dish, 
+                our menu is designed to cater to all tastes and preferences. 
+                With a focus on quality, creativity, and exceptional service, 
+                we are passionate about providing an unforgettable dining experience for each and every guest. 
+                Join us for a meal that feels like home, 
+                and let us make your time with us truly special</p>
+                <div class="icons-container">
+                    <div class="icons">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>Free Delivery</span>
+                    </div>
+
+                    <div class="icons">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>Easy Payment</span>
+                    </div>
+
+                    <div class="icons">
+                        <i class="fas fa-headset"></i>
+                        <span>24/7 service</span>
+                    </div>
+
+
+                </div>
+
+                <a href="#" class="btn">Learn More</a>
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="menu" id="menu">
+
+    <h3 class="sub-heading">Our Menu</h3>
+    <h1 class="heading">Summer Vibe</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="images/menuImages/burger2Menu.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                 <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Burger Extra Sauce</h3>
+                <p>"Juicy burger with your choice of extra sauce for that extra kick. Customize your flavor just the way you like it!"</p>
+                <a href="#" class="btn">Add to Cart</a>
+                <span class="price">R80</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/menuImages/burgerMenu.avif" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                 <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Veggie Patty</h3>
+                <p>"Delicious veggie patty made with a blend of fresh vegetables and hearty grains, perfect for a satisfying and flavorful meat-free option!"</p>
+                <a href="#" class="btn">Add to Cart</a>
+                <span class="price">R80</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/menuImages/chickenChipsMenu.avif" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                 <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Chicken & Chips Combo</h3>
+                <p>"Golden, crispy fried chicken paired with a generous serving of hot, crispy chips. The ultimate comfort food combo for a satisfying meal!"</p>
+                <a href="#" class="btn">Add to Cart</a>
+                <span class="price">R80</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/menuImages/chickenPiecesMenu.avif" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                 <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Chicken Pieces & Sauce</h3>
+                <p>"Crunchy on the outside, tender on the inside—our fried chicken is perfectly seasoned and fried to golden perfection for a mouthwatering experience!"</p>
+                <a href="#" class="btn">Add to Cart</a>
+                <span class="price">R80</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/menuImages/chickenTenders2Menu.avif" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                 <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Chicken Tenders & Sauce</h3>
+                <p>"Juicy, tender chicken strips, lightly battered and fried to a crispy golden brown, served with your choice of dipping sauce for the perfect flavor punch!"</p>
+                <a href="#" class="btn">Add to Cart</a>
+                <span class="price">R80</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/menuImages/chickenTendersMenu.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                 <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Chicken Tenders</h3>
+                <p>"Golden, crispy fried chicken tenders, seasoned to perfection with a deliciously crunchy exterior and tender, juicy meat inside. Perfectly paired with your favorite dipping sauce!"</p>
+                <a href="#" class="btn">Add to Cart</a>
+                <span class="price">R80</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/menuImages/loadedFries2Menu.avif" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                 <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Chicken Bits Loaded Fries</h3>
+                <p>"Golden, crispy fries topped with savory chicken bits, melted cheese, and a drizzle of rich sauce. A deliciously loaded treat that’s packed with flavor in every bite!"</p>
+                <a href="#" class="btn">Add to Cart</a>
+                <span class="price">R80</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/menuImages/loadedFriesMenu.avif" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                 <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Bacon Bits Loaded Fries</h3>
+                <p>"Golden, crispy fries topped with crispy bacon bits, melted cheese, and a drizzle of savory sauce. A perfect combination of rich, smoky flavor and crunchy goodness!"</p>
+                <a href="#" class="btn">Add to Cart</a>
+                <span class="price">R80</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/menuImages/pastaMenu.avif" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                 <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Pasta & Meatballs</h3>
+                <p>"Perfectly cooked pasta served with tender, juicy meatballs in a rich, savory marinara sauce. A comforting classic that's sure to satisfy your cravings!"</p>
+                <a href="#" class="btn">Add to Cart</a>
+                <span class="price">R80</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/menuImages/pizza2Menu.jpeg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                 <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Cheese Pizza</h3>
+                <p>"Classic cheese pizza with a perfectly crispy crust, topped with rich, melted mozzarella cheese and a savory tomato sauce. Simple, delicious, and always a favorite!"</p>
+                <a href="#" class="btn">Add to Cart</a>
+                <span class="price">R80</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/menuImages/pizza3Menu.avif" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                 <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Supreme Pizza</h3>
+                <p>"Loaded with tender chicken, savory vegetables, and a blend of melted cheeses on a crispy crust, all topped with a flavorful sauce. A supreme combination of tastes in every bite!"</p>
+                <a href="#" class="btn">Add to Cart</a>
+                <span class="price">R80</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/menuImages/pizzaMenu.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                 <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Classic Pizza</h3>
+                <p>"Classic pepperoni pizza featuring a perfectly crisp crust, topped with rich tomato sauce, melted mozzarella, and generous slices of savory, slightly crispy pepperoni. A timeless favorite!"</p>
+                <a href="#" class="btn">Add to Cart</a>
+                <span class="price">R80</span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="favorites" id="favorites">
+    <h3 class="sub-heading">Favorite Foods</h3>
+    <h1 class="heading">Your Favorites</h1>
+    <div class="favorite-container"></div> <!-- Favorites will be added here -->
+</section>
+
+<section id="review">
+    <h3 class="sub-heading">Customer Reviews</h3>
+    <h1 class="heading">What Our Customers Are Saying</h1>
+
+    <!-- Review Form -->
+    <div class="review-form">
+        <h2>Leave a Review</h2>
+        <form id="reviewForm">
+            <textarea id="reviewText" placeholder="Write your review here..." required></textarea>
+            <div class="rating">
+                <label for="rating">Rate the dish:</label>
+                <select id="rating" required>
+                    <option value="1">1 Star</option>
+                    <option value="2">2 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="5">5 Stars</option>
+                </select>
+            </div>
+            <button type="submit">Submit Review</button>
+        </form>
+    </div>
+
+    <!-- Display Reviews -->
+    <div class="reviews-display">
+        <h2>Customer Reviews</h2>
+        <div id="reviewsList"></div>
+    </div>
+</section>
+
+<section class="order" id="order">
+    <h3 class="sub-heading">Your Order</h3>
+    <h1 class="heading">Cart Summary</h1>
+
+    <div class="cart-items-container">
+        <ul id="cart-items">
+            <!-- Items added dynamically here -->
+        </ul>
+        <h3>Total: <span id="cart-total">R0</span></h3>
+        <button class="btn" id="checkout-btn">Checkout</button>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script src="js/script.js">
+            
+        </script>
+    </body>
+</html>
