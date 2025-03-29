@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Message</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>❤️ Your Love Message ❤️</h1>
+        <p id="love-message" class="typewriter"></p>
+        
+        <div class="memory-gallery">
+            <h3>Our Beautiful Memories</h3>
+            <!-- EMPTY - Will be filled by JavaScript -->
+            <div class="photos"></div>
+            
+            <!-- Optional Shuffle Button -->
+            <button onclick="displayRandomPhotos()" class="shuffle-btn">
+                🔀 Shuffle Memories
+            </button>
+        </div>
+        
+        <p id="kiss-counter">Virtual kisses: 0</p>
+        <button onclick="goHome()">Back to Home</button>
+    </div>
+
+    <!-- Hidden audio elements -->
+    <audio id="loveSound" src="assets/love-sound.mp3"></audio>
+    <audio id="kissSound" src="assets/kiss-sound.mp3"></audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
